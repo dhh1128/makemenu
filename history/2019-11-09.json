@@ -1,27 +1,27 @@
 {
   "sun": [
-    "hawaiian haystacks",
-    "jello salad",
-    "cobbler"
+    "hamburgers",
+    "chips and salsa",
+    "brownies"
   ],
   "mon": [
-    "taco pasta skillet"
+    "chile verde"
   ],
   "tue": [
-    "pancakes"
+    "scones"
   ],
   "wed": [
-    "chili",
-    "jello salad",
-    "cobbler"
+    "french toast",
+    "chips and salsa",
+    "yogurt parfait"
   ],
   "thu": [
-    "cheesy, crispy potato slices"
+    "stroganoff"
   ],
   "fri": [
-    "stew"
+    "mac and cheese"
   ],
   "sat": [
-    "cobb salad"
+    "zucchini boats"
   ]
 }
