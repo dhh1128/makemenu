@@ -15,7 +15,7 @@ filters = {
     "wed": ["+dessert", "-plain", "+extra", "-end-of-week"],
     "fri": ["+plain"]
 }
-min_repeat_days = 21
+min_repeat_days = 15
 max_ago_relevant_day_count = 49
 categories = ["+entree", "+dessert", "+extra"]
 
@@ -43,7 +43,7 @@ def record(menu):
     cwd = os.getcwd()
     os.chdir(history_folder)
     try:
-        os.system('echo git add %s && git commit -m "add weekly menu for %s" && git push' % (fname, fname[:-5]))
+        os.system('git add %s && git commit -m "add weekly menu for %s" && git push' % (fname, fname[:-5]))
     finally:
         os.chdir(cwd)
 
@@ -87,27 +87,37 @@ def filter_options(options, filter):
     return [o for o in options if has_tag(o, tag) == should_have]
 
 
-def get_recency_score(event, history, this_week):
-    last_use = datetime.datetime.fromisoformat(event.get("when"))
-    ago = this_week - last_use
+def get_recency_score(event_date, today):
+    ago = event_date - today
     # Don't give any score to items that have occured in previous 6 weeks
-    n = max(ago.days, max_ago_relevant_day_count) if ago.days > min_repeat_days else 0
+    n = min(ago.days, max_ago_relevant_day_count) if ago.days > min_repeat_days else 0
     return n * n
 
 
 def weight_by_history(candidates, history):
-    this_week = datetime.datetime.date(datetime.datetime.utcnow())
+    now = datetime.datetime.now()
     cumulative = 0
     weighted = []
     for c in candidates:
+        # Assume this item has never been used in a menu before. That would give it
+        # a maximum score.
         score = max_ago_relevant_day_count * max_ago_relevant_day_count
+        # Now look to see how recently it was used.
         for menu in history:
+            found = False
+            increment = 0
             for day in days_of_week:
-                if c in menu.get(day, []):
-                    score = get_recency_score(menu, history, this_week)
+                increment += 1
+                if c["key"] in menu.get(day, []):
+                    menu_date = datetime.datetime.fromisoformat(menu.get("key"))
+                    score = get_recency_score(now, menu_date + datetime.timedelta(days=increment))
+                    found = True
                     break
+            if found:
+                break
         weighted.append({"score": score, "candidate": c})
         cumulative += score
+    # Introduce randomness among equally-scored items.
     random.shuffle(weighted)
     weighted.sort(key=lambda x: x.get("score"), reverse=True)
     return weighted, cumulative
@@ -115,16 +125,26 @@ def weight_by_history(candidates, history):
 
 def select_not_recent(candidates, history):
     weighted, cumulative = weight_by_history(candidates, history)
-    lambda_val = cumulative * 0.3
-    offset = random.expovariate(1 / lambda_val)
-    required_score = cumulative - offset
-    consumed_probability = 0
-    for item in weighted:
-        next = consumed_probability + item["score"]
-        if next > required_score:
-            return item["candidate"]
-        consumed_probability = next
-    return weighted[0]
+    # If we found any items with a positive score (meaning they were used
+    # long enough ago to be interesting for ranking)...
+    if cumulative:
+        # We are trying to select something from the front 15% or so of the
+        # exponential distribution -- something old, but not necessarily the
+        # exact oldest thing.
+        lambda_val = cumulative * 0.15
+        # Don't ever select something from beyond the first 30% of the exponential
+        # distrubution.
+        required_score = min(random.expovariate(1 / lambda_val), lambda_val * 2)
+        consumed_probability = 0
+        for item in weighted:
+            next = consumed_probability + item["score"]
+            if next > required_score:
+                return item["candidate"]
+            consumed_probability = next
+    # If we get here, there was nothing that met our criteria; just select
+    # at random from among the least-recently-used items. (Selecting [0] is
+    # random because we already shuffled items with the same score.)
+    return weighted[0]["candidate"]
 
 
 def get_filtered_candidates(options, category, filters_for_day, used):
