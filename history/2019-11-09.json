@@ -1,27 +1,27 @@
 {
   "sun": [
-    "french toast",
-    "chips and salsa",
-    "yogurt parfait"
+    "hawaiian haystacks",
+    "jello salad",
+    "cobbler"
   ],
   "mon": [
-    "omelets"
+    "taco pasta skillet"
   ],
   "tue": [
-    "german pancakes"
+    "pancakes"
   ],
   "wed": [
-    "shepherd's pie",
-    "chips and salsa",
-    "yogurt parfait"
+    "chili",
+    "jello salad",
+    "cobbler"
   ],
   "thu": [
-    "bruschetta"
+    "cheesy, crispy potato slices"
   ],
   "fri": [
-    "mac and cheese"
+    "stew"
   ],
   "sat": [
-    "frozen burritos"
+    "cobb salad"
   ]
 }
