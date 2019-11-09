@@ -1,27 +1,27 @@
 {
   "sun": [
-    "hamburgers",
-    "chips and salsa",
-    "brownies"
+    "chile verde",
+    "steamed veggies",
+    "ice cream sundaes"
   ],
   "mon": [
-    "chile verde"
+    "nachos"
   ],
   "tue": [
-    "scones"
+    "biscuits and jam"
   ],
   "wed": [
-    "french toast",
-    "chips and salsa",
+    "au gratin potatoes",
+    "side salad",
     "yogurt parfait"
   ],
   "thu": [
-    "stroganoff"
+    "pancakes"
   ],
   "fri": [
     "mac and cheese"
   ],
   "sat": [
-    "zucchini boats"
+    "homemade pizza"
   ]
 }

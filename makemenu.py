@@ -191,11 +191,30 @@ def suggest(options, history):
             break
 
 
+def find_option(options, name):
+    for item in options:
+        if item.get("key") == name:
+            return item
+
+
+def show_later(options, history):
+    selected = history[0]
+    menu = {}
+    for day in days_of_week:
+        items = selected[day]
+        for name in items:
+            menu[day] = [find_option(options, name) for name in items]
+    show(menu)
+
+
 def main():
-    options = load_folder(options_folder, "item")
     history = load_folder(history_folder, "menu")
+    options = load_folder(options_folder, "item")
     history.sort(key=lambda x: x.get("key"), reverse=True)
-    suggest(options, history)
+    if len(sys.argv) > 1 and sys.argv[1].startswith('sho'):
+        show_later(options, history)
+    else:
+        suggest(options, history)
 
 
 if __name__ == '__main__':
