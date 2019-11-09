@@ -1,27 +1,27 @@
 {
   "sun": [
-    "cacciatore",
+    "french toast",
     "chips and salsa",
-    "chocolate chip cookies"
+    "yogurt parfait"
   ],
   "mon": [
-    "grilled cheese sandwiches"
+    "omelets"
   ],
   "tue": [
-    "chicken coconut kurma"
+    "german pancakes"
   ],
   "wed": [
-    "baked potato bar",
-    "jello salad",
-    "cobbler"
+    "shepherd's pie",
+    "chips and salsa",
+    "yogurt parfait"
   ],
   "thu": [
-    "quesadillas"
+    "bruschetta"
   ],
   "fri": [
-    "nachos"
+    "mac and cheese"
   ],
   "sat": [
-    "chile verde"
+    "frozen burritos"
   ]
 }
