@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "cacciatore",
+    "chips and salsa",
+    "chocolate chip cookies"
+  ],
+  "mon": [
+    "grilled cheese sandwiches"
+  ],
+  "tue": [
+    "chicken coconut kurma"
+  ],
+  "wed": [
+    "baked potato bar",
+    "jello salad",
+    "cobbler"
+  ],
+  "thu": [
+    "quesadillas"
+  ],
+  "fri": [
+    "nachos"
+  ],
+  "sat": [
+    "chile verde"
+  ]
+}

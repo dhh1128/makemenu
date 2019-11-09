@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "yellow curry",
+    "steamed veggies",
+    "berries and cream"
+  ],
+  "mon": [
+    "ramen"
+  ],
+  "tue": [
+    "breakfast burritos"
+  ],
+  "wed": [
+    "pulled pork sandwiches",
+    "jello salad",
+    "ice cream sundaes"
+  ],
+  "thu": [
+    "deli sandwiches"
+  ],
+  "fri": [
+    "quesadillas"
+  ],
+  "sat": [
+    "cheesy portabella chicken"
+  ]
+}

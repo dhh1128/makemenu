@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "chicken broccoli cheese casserole",
+    "side salad",
+    "ice cream sundaes"
+  ],
+  "mon": [
+    "mashed potatoes and gravy"
+  ],
+  "tue": [
+    "mexican pizzas"
+  ],
+  "wed": [
+    "cacciatore",
+    "steamed veggies",
+    "tapioca pudding"
+  ],
+  "thu": [
+    "tortilla soup"
+  ],
+  "fri": [
+    "peanut butter sandwiches"
+  ],
+  "sat": [
+    "cold cereal"
+  ]
+}

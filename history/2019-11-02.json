@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "cacciatore",
+    "steamed veggies",
+    "chocolate chip cookies"
+  ],
+  "mon": [
+    "au gratin potatoes"
+  ],
+  "tue": [
+    "chicken coconut kurma"
+  ],
+  "wed": [
+    "tacos",
+    "steamed veggies",
+    "popsicles"
+  ],
+  "thu": [
+    "reuben sandwiches"
+  ],
+  "fri": [
+    "biscuits and jam"
+  ],
+  "sat": [
+    "lasagne"
+  ]
+}
