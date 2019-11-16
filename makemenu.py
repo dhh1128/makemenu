@@ -59,7 +59,7 @@ def shop_for(item, shopping_list):
                 shopping_list[i] = [reason]
 
 
-def show(menu):
+def show_menu(menu):
     shopping_list = {}
 
     print('Menu\n----')
@@ -69,7 +69,10 @@ def show(menu):
         for item in items:
             shop_for(item, shopping_list)
         print(line)
+    return shopping_list
 
+
+def show_shopping_list(shopping_list):
     print('\nShopping List\n-------------')
     ingredients = sorted(shopping_list.keys())
     for ingredient in ingredients:
@@ -183,10 +186,11 @@ def get_week_worth_of_suggestions(options, history):
 def suggest(options, history):
     while True:
         menu = get_week_worth_of_suggestions(options, history)
-        show(menu)
+        shopping_list = show_menu(menu)
         sys.stdout.write('\nRecord menu for this week? ')
         answer = input()
         if answer.lower().startswith('y'):
+            show_shopping_list(shopping_list)
             record(menu)
             break
 
@@ -204,7 +208,8 @@ def show_later(options, history):
         items = selected[day]
         for name in items:
             menu[day] = [find_option(options, name) for name in items]
-    show(menu)
+    shopping_list = show_menu(menu)
+    show_shopping_list(shopping_list)
 
 
 def main():
