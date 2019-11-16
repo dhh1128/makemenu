@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "tortilla soup",
+    "celery sticks",
+    "ice cream cones"
+  ],
+  "mon": [
+    "navajo tacos"
+  ],
+  "tue": [
+    "lasagne"
+  ],
+  "wed": [
+    "omelets",
+    "mixed veggies",
+    "pie"
+  ],
+  "thu": [
+    "deli sandwiches"
+  ],
+  "fri": [
+    "peanut butter sandwiches"
+  ],
+  "sat": [
+    "chicken strips"
+  ]
+}
