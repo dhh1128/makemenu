@@ -1,27 +1,19 @@
 {
   "sun": [
-    "tacos",
-    "squash",
-    "muffins"
+    "shepherd's pie"
   ],
   "mon": [
     "naan tomato white bean pizza"
   ],
   "tue": [
-    "shepherd's pie"
+    "tacos"
   ],
   "wed": [
-    "cacciatore",
+    "parmesan chicken",
     "squash",
     "plaintain soup"
   ],
-  "thu": [
-    "taco pasta skillet"
-  ],
   "fri": [
     "stew"
-  ],
-  "sat": [
-    "parmesan chicken"
   ]
 }
