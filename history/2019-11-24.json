@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "tacos",
+    "squash",
+    "muffins"
+  ],
+  "mon": [
+    "naan tomato white bean pizza"
+  ],
+  "tue": [
+    "shepherd's pie"
+  ],
+  "wed": [
+    "cacciatore",
+    "squash",
+    "plaintain soup"
+  ],
+  "thu": [
+    "taco pasta skillet"
+  ],
+  "fri": [
+    "stew"
+  ],
+  "sat": [
+    "parmesan chicken"
+  ]
+}
