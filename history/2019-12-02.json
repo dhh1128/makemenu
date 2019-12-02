@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "chili",
+    "cheese twists",
+    "smoothie"
+  ],
+  "mon": [
+    "ham fried rice"
+  ],
+  "tue": [
+    "cold cereal"
+  ],
+  "wed": [
+    "breakfast burritos",
+    "chips and salsa",
+    "cobbler"
+  ],
+  "thu": [
+    "grilled cheese sandwiches"
+  ],
+  "fri": [
+    "tuna or chicken melts"
+  ],
+  "sat": [
+    "cheesy, crispy potato slices"
+  ]
+}
