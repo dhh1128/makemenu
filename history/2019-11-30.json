@@ -1,9 +1,4 @@
 {
-  "sun": [
-    "chili",
-    "cheese twists",
-    "smoothie"
-  ],
   "mon": [
     "ham fried rice"
   ],
@@ -11,9 +6,9 @@
     "cold cereal"
   ],
   "wed": [
-    "breakfast burritos",
-    "chips and salsa",
-    "cobbler"
+    "chili",
+    "cheese twists",
+    "smoothie"
   ],
   "thu": [
     "grilled cheese sandwiches"

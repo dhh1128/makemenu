@@ -64,11 +64,12 @@ def show_menu(menu):
 
     print('Menu\n----')
     for day in days_of_week:
-        items = menu[day]
-        line = day + ': ' + ', '.join([i.get("key") for i in items])
-        for item in items:
-            shop_for(item, shopping_list)
-        print(line)
+        items = menu.get(day)
+        if items:
+            line = day + ': ' + ', '.join([i.get("key") for i in items])
+            for item in items:
+                shop_for(item, shopping_list)
+            print(line)
     return shopping_list
 
 
@@ -205,9 +206,10 @@ def show_later(options, history):
     selected = history[0]
     menu = {}
     for day in days_of_week:
-        items = selected[day]
-        for name in items:
-            menu[day] = [find_option(options, name) for name in items]
+        items = selected.get(day)
+        if items:
+            for name in items:
+                menu[day] = [find_option(options, name) for name in items]
     shopping_list = show_menu(menu)
     show_shopping_list(shopping_list)
 
