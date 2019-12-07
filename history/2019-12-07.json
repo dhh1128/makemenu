@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "mashed potatoes and gravy",
+    "chips and salsa",
+    "cobbler"
+  ],
+  "mon": [
+    "taco pasta skillet"
+  ],
+  "tue": [
+    "spaghetti"
+  ],
+  "wed": [
+    "stroganoff",
+    "greek salad",
+    "chocolate chip cookies"
+  ],
+  "thu": [
+    "german pancakes"
+  ],
+  "fri": [
+    "frozen pizza"
+  ],
+  "sat": [
+    "cacciatore"
+  ]
+}
