@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "french toast",
+    "chips and salsa",
+    "brownies"
+  ],
+  "mon": [
+    "cheesy portabella chicken"
+  ],
+  "tue": [
+    "frozen burritos"
+  ],
+  "wed": [
+    "hamburgers",
+    "jello salad",
+    "popsicles"
+  ],
+  "thu": [
+    "baked potato bar"
+  ],
+  "fri": [
+    "leftovers"
+  ],
+  "sat": [
+    "scones"
+  ]
+}
