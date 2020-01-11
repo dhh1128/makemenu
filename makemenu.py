@@ -66,7 +66,7 @@ def show_menu(menu):
     for day in days_of_week:
         items = menu.get(day)
         if items:
-            line = day + ': ' + ', '.join([i.get("key") for i in items])
+            line = day + ': ' + ', '.join([i.get("key") for i in items if i])
             for item in items:
                 shop_for(item, shopping_list)
             print(line)
