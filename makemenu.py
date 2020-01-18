@@ -66,10 +66,13 @@ def show_menu(menu):
     for day in days_of_week:
         items = menu.get(day)
         if items:
+            for item in items:
+                if not item:
+                    print('Unrecognized item on %s.' % day)
             line = day + ': ' + ', '.join([i.get("key") for i in items if i])
+            print(line)
             for item in items:
                 shop_for(item, shopping_list)
-            print(line)
     return shopping_list
 
 
@@ -208,8 +211,13 @@ def show_later(options, history):
     for day in days_of_week:
         items = selected.get(day)
         if items:
+            menu[day] = []
             for name in items:
-                menu[day] = [find_option(options, name) for name in items]
+                item = find_option(options, name)
+                if item:
+                    menu[day].append(item)
+                else:
+                    print('Unrecognized item "%s" on %s.' % (name, day))
     shopping_list = show_menu(menu)
     show_shopping_list(shopping_list)
 
