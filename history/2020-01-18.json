@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "navajo tacos",
+    "side salad",
+    "sherbet and berries"
+  ],
+  "mon": [
+    "hawaiian haystacks"
+  ],
+  "tue": [
+    "tacos"
+  ],
+  "wed": [
+    "lemon clam spaghetti",
+    "celery sticks",
+    "berries and cream"
+  ],
+  "thu": [
+    "shepherd's pie"
+  ],
+  "fri": [
+    "peanut butter sandwiches"
+  ],
+  "sat": [
+    "chicken strips"
+  ]
+}
