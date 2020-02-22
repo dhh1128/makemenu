@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "hamburgers",
+    "cheese twists",
+    "popsicles"
+  ],
+  "mon": [
+    "navajo tacos"
+  ],
+  "tue": [
+    "german pancakes"
+  ],
+  "wed": [
+    "zupa toscana",
+    "cheese twists",
+    "chocolate chip cookies"
+  ],
+  "thu": [
+    "clam chowder"
+  ],
+  "fri": [
+    "ramen"
+  ],
+  "sat": [
+    "grilled cheese sandwiches"
+  ]
+}
