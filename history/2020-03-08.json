@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "tortilla soup",
+    "jello salad",
+    "smoothie"
+  ],
+  "mon": [
+    "bruschetta"
+  ],
+  "tue": [
+    "omelets"
+  ],
+  "wed": [
+    "scones",
+    "chips and salsa",
+    "plaintain soup"
+  ],
+  "thu": [
+    "naan tomato white bean pizza"
+  ],
+  "fri": [
+    "frozen pizza"
+  ],
+  "sat": [
+    "cacciatore"
+  ]
+}
