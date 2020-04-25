@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "homemade pizza",
+    "cheese twists",
+    "smoothie"
+  ],
+  "mon": [
+    "reuben sandwiches"
+  ],
+  "tue": [
+    "chile verde"
+  ],
+  "wed": [
+    "pulled pork sandwiches",
+    "steamed veggies",
+    "sherbet and berries"
+  ],
+  "thu": [
+    "au gratin potatoes"
+  ],
+  "fri": [
+    "nachos"
+  ],
+  "sat": [
+    "hawaiian haystacks"
+  ]
+}
