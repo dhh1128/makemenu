@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "fajitas",
+    "squash",
+    "pie"
+  ],
+  "mon": [
+    "ham fried rice"
+  ],
+  "tue": [
+    "frozen burritos"
+  ],
+  "wed": [
+    "zucchini boats",
+    "jello salad",
+    "chocolate chip cookies"
+  ],
+  "thu": [
+    "lasagne"
+  ],
+  "fri": [
+    "nachos"
+  ],
+  "sat": [
+    "creamy tomato soup"
+  ]
+}
