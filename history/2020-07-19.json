@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "yellow curry",
+    "celery sticks",
+    "tapioca pudding"
+  ],
+  "mon": [
+    "cobb salad"
+  ],
+  "tue": [
+    "mexican pizzas"
+  ],
+  "wed": [
+    "variety bowl",
+    "asparagus",
+    "cobbler"
+  ],
+  "thu": [
+    "deli sandwiches"
+  ],
+  "fri": [
+    "ramen"
+  ],
+  "sat": [
+    "pulled pork sandwiches"
+  ]
+}
