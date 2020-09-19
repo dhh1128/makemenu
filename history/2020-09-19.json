@@ -1,0 +1,27 @@
+{
+  "sun": [
+    "shepherd's pie",
+    "chips and salsa",
+    "pie"
+  ],
+  "mon": [
+    "clam chowder"
+  ],
+  "tue": [
+    "cold cereal"
+  ],
+  "wed": [
+    "zupa toscana",
+    "mixed veggies",
+    "brownies"
+  ],
+  "thu": [
+    "crepes"
+  ],
+  "fri": [
+    "chicken strips"
+  ],
+  "sat": [
+    "chinese"
+  ]
+}
